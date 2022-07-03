@@ -7,10 +7,8 @@ import { Button } from '@mui/material';
 export const StockTable = ({ data, tableDef, handleOrder, getDataList, totalCount, pageSize = 50, pageNo = 1 }) => {
 
     const newTableDef = Utils.AppendActionButton(tableDef, handleOrder);
-    debugger;
 
     const handlePageChange = (page) => {
-        debugger;
         var pageData = {
             pageSize: pageSize,
             pageNo: page + 1
@@ -19,7 +17,6 @@ export const StockTable = ({ data, tableDef, handleOrder, getDataList, totalCoun
     }
 
     const handlePageSizeChange = (pageSize) => {
-        debugger;
         var pageData = {
             pageSize: pageSize,
             pageNo: 1
@@ -32,7 +29,7 @@ export const StockTable = ({ data, tableDef, handleOrder, getDataList, totalCoun
             <Box sx={{ height: 1000, width: '100%' }}>
                 <DataGrid getRowId={(row) => row.stockId} rows={data} columns={newTableDef}
                     pagination paginationMode="server" rowCount={totalCount}
-                    rowsPerPageOptions={[25,50,100]} page={pageNo - 1} pageSize={pageSize}
+                    rowsPerPageOptions={[25, 50, 100]} page={pageNo - 1} pageSize={pageSize}
                     onPageChange={handlePageChange}
                     onPageSizeChange={handlePageSizeChange} />
             </Box>
@@ -43,7 +40,6 @@ export const StockTable = ({ data, tableDef, handleOrder, getDataList, totalCoun
 export const OrderTable = ({ orders, orderTableDef, handleRemoveOrders, handleBookOrders }) => {
 
     const newTableDef = Utils.AppendStatusLabel(orderTableDef);
-    debugger;
 
     const [selectedOrders, setSelectionOrders] = useState([]);
 

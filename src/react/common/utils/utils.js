@@ -78,12 +78,6 @@ export default class Utils {
 
   static AppendStatusLabel(tableDef) {
 
-    const errorLabel = [{
-      field: 'error',
-      headerName: 'error',
-      width: 160
-    }];
-
     const idLabel = [{
       field: 'id',
       headerName: 'id',
@@ -114,7 +108,7 @@ export default class Utils {
       }
     }]
 
-    const res = [...idLabel, ...statusLabel, ...tableDef, ...errorLabel ];
+    const res = [...idLabel, ...statusLabel, ...tableDef ];
     return res;
   }
 

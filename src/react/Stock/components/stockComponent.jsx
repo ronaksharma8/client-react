@@ -33,7 +33,6 @@ export class StockComponent extends Component {
     };
 
     handleOrder = (item, action) => {
-        debugger;
         const { orders } = this.state;
         var newOrders = [...orders];
 
@@ -49,10 +48,9 @@ export class StockComponent extends Component {
     };
 
     handleBookOrders = (items) => {
-        const { orders, createOrder, order, errorMessage } = this.props;
-        debugger;
+        const { orders, createOrder } = this.props;
         items.forEach(element => {
-            const createOrderReq = Utils.createOrderReq(element);
+            //const createOrderReq = Utils.createOrderReq(element);
             // call dispatch async
         });
 

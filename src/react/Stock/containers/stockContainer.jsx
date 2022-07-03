@@ -21,9 +21,7 @@ const mapStateToProps = state => {
         orderTableDef: state.orderTableDef,
         totalCount: state.totalCount,
         pageSize: state.pageSize,
-        pageNo: state.pageNo,
-        order: state.order,
-        errorMessage: state.errorMessage,
+        pageNo: state.pageNo
     };
 };
 

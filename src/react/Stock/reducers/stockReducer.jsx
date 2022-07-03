@@ -16,7 +16,6 @@ const initialState = {
 export const StockReducer = (state = initialState, action) => {
     switch (action.type) {
         case FETCH_STOCK_LIST_SUCCESS:
-            debugger;
             const tableDef = Utils.createTableDef(action.columns);
             const orderTableDef = Utils.createTableDef(action.orderColumns);
             return {
