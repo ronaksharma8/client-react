@@ -3,7 +3,6 @@ import './App.css';
 import StockContainer from './react/Stock/containers/stockContainer';
 import { Provider } from 'react-redux';
 import store from './react/store';
-import TestComponent from './TestComponent';
 
 function App() {
   return (

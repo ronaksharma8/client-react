@@ -53,30 +53,10 @@ export class StockComponent extends Component {
         debugger;
         items.forEach(element => {
             const createOrderReq = Utils.createOrderReq(element);
-            // debugger;
-            // createOrder(createOrderReq);
-            // debugger;
-            // console.log(order);
-            // console.log(errorMessage);
-
-            const myPromise = new Promise((resolve, reject) => {
-                createOrder(createOrderReq);
-                resolve('Promise is resolved successfully.');
-            });
-
-            myPromise.then((message) => {
-                console.log(order);
-                console.log(errorMessage);
-            });
+            // call dispatch async
         });
 
-        //update state
-        // const newOrders = data.map(obj => {
-        //     if (obj.id === 2) {
-        //         return { ...obj, country: 'Denmark' };
-        //     }
-        //     return obj;
-        // });
+        //update to new state so that orderList can be refreshed..
     }
 
     render() {
