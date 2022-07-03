@@ -1,5 +1,4 @@
-import { put, takeLatest, call } from 'redux-saga/effects'
-
+import { put, takeLatest, call } from 'redux-saga/effects';
 import { StockService } from '../services/stockService';
 
 function* fetchStock(action) {

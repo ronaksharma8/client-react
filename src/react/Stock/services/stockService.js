@@ -1,4 +1,4 @@
-import { Get, Post, Put } from '../../serviceBase';
+import { Get, Post } from '../../serviceBase';
 
 export const StockService = {
   //Level Two
